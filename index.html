@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <!-- ... -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>weather! - AP CSP</title>
+  <link href="tailwind.css" rel="stylesheet">
+</head>
+<body class="bg-blue-50">
+    <div class="flex items-center justify-center h-screen">
+    <div class="p-6 max-w-sm mx-auto bg-white border-4 font-mono border-indigo-200 rounded-xl shadow-md flex flex-col items-center space-x-4">
+        <div>
+          <div class="text-lg text-gray-700 inline-block pr-20">weather!</div>
+          <div class="inline-block">
+            <form>
+                <input class="border-2 p-2 h-8 w-32 font-bold border-transparent bg-white border-indigo-200 text-gray-700 placeholder-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent text-sm" placeholder="zip code" maxlength="5">
+                <input type="submit" style="display: none" />
+
+            </form>
+          </div>
+        </div>
+
+    <div class="p-7 pt-10 pl-0">
+        <p class="text-black font-bold text-2xl p-2">New York</p>
+        <h2 class="text-black font-bold text-7xl">88&#176;</h2>
+      </div>
+
+      <div class="p-4">
+        <p class="text-black font-bold text-lg p-2">conditionals:</p>
+        <p class="text-black text-md p-2 inline-block">is it cloudy? : <strong>YES</strong></p>
+        <p class="text-black text-md p-2 inline-block">is it humid? : <strong>NO</strong></p>
+        <p class="text-black text-md p-2 inline-block">is it windy? : <strong>YES</strong></p>
+  </div>
+      <div class="p-4">
+        <p class="text-black font-bold text-lg p-2">stats:</p>
+        <p class="text-black text-md p-2">humidity: <strong>23%</strong></p>
+        <p class="text-black text-md p-2">wind direction: <strong>NW</strong></p>
+        <p class="text-black text-md p-2">thursday, december 21st, 2021 @ <strong>9:43PM</strong></p>
+        <hr class="color-indigo-200 p-1">
+        <p class="text-black text-sm pl-10 p-2 ">cities searched: <strong>34</strong></p>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
