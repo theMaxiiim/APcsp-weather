@@ -13,32 +13,32 @@
         <div>
           <div class="text-lg text-gray-700 inline-block pr-20">weather!</div>
           <div class="inline-block">
-            <form>
-                <input class="border-2 p-2 h-8 w-32 font-bold border-transparent bg-white border-indigo-200 text-gray-700 placeholder-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent text-sm" placeholder="zip code" maxlength="5">
+            <form id="zipCodeForm">
+                <input id="zipCodeField" class="border-2 p-2 h-8 w-32 font-bold border-transparent bg-white border-indigo-200 text-gray-700 placeholder-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent text-sm" placeholder="zip code" minlength="5" maxlength="5" type="text" name="zipCode">
                 <input type="submit" style="display: none" />
-
             </form>
           </div>
         </div>
 
-    <div class="p-7 pt-10 pl-0">
-        <p class="text-black font-bold text-2xl p-2">New York</p>
-        <h2 class="text-black font-bold text-7xl">88&#176;</h2>
+    <div class="p-7 pt-10 pl-0 grid justify-items-center">
+        <p id="city" class="text-black font-bold text-2xl p-2">enter a city</p>
+        <h2 id="temp" class="text-black font-bold text-7xl">#&#176;</h2>
       </div>
 
       <div class="p-4">
         <p class="text-black font-bold text-lg p-2">conditionals:</p>
-        <p class="text-black text-md p-2 inline-block">is it cloudy? : <strong>YES</strong></p>
-        <p class="text-black text-md p-2 inline-block">is it humid? : <strong>NO</strong></p>
-        <p class="text-black text-md p-2 inline-block">is it windy? : <strong>YES</strong></p>
+        <p id="clouds" class="text-black text-md p-2 inline-block">is it cloudy? : <strong>#</strong></p>
+        <p id="humid" class="text-black text-md p-2 inline-block">is it humid? : <strong>#</strong></p>
+        <p id="wind" class="text-black text-md p-2 inline-block">is it windy? : <strong>#</strong></p>
   </div>
       <div class="p-4">
         <p class="text-black font-bold text-lg p-2">stats:</p>
-        <p class="text-black text-md p-2">humidity: <strong>23%</strong></p>
-        <p class="text-black text-md p-2">wind direction: <strong>NW</strong></p>
-        <p class="text-black text-md p-2">thursday, december 21st, 2021 @ <strong>9:43PM</strong></p>
+        <p id="humidPercent" class="text-black text-md p-2">humidity: <strong>#%</strong></p>
+        <p id="windDirection" class="text-black text-md p-2">wind direction: <strong>#</strong></p>
+        <p id="dNT"class="text-black text-md p-2">day, month 11th, 2021 @ <strong>9:43PM</strong></p>
         <hr class="color-indigo-200 p-1">
-        <p class="text-black text-sm pl-10 p-2 ">cities searched: <strong>34</strong></p>
+        <p id="cityCounter" class="text-black text-sm p-2 ">cities searched: <strong>0</strong></p>
+        <p id="mostSearched" class="text-black text-sm p-2 ">most searched zip code: <strong>#</strong></p>
   </div>
 </div>
 <script src="app.js"></script>
